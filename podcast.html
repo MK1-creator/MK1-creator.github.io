@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Podcast — The Philosopher's Compass | Meredith Alexander Kunz</title>
+<meta name="description" content="The Philosopher's Compass — conversations offering philosophical inspiration, guidance, and direction for meaningful lives today.">
+<link rel="canonical" href="https://meredithkunz.com/podcast.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Philosopher's Compass">
+<meta property="og:description" content="Philosophical inspiration and guidance for meaningful lives today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="site-head__inner">
+    <a class="wordmark" href="index.html">Meredith <b>Alexander Kunz</b></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#writing">Writing</a>
+      <a href="books.html">Books</a>
+      <a href="podcast.html" aria-current="page">Podcast</a>
+      <a href="coaching.html">Coaching</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Podcast</p>
+      <h1>The Philosopher's<br>Compass</h1>
+      <p class="lede">Conversations for anyone seeking philosophical inspiration, guidance, and
+      direction — and a sense of how to live a meaningful life today. That's why I'm calling it
+      <cite>The Philosopher's Compass</cite>.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://open.spotify.com/show/01TWjnf4vQz4rwka1CDkVj">Listen on Spotify</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="embeds" style="grid-template-columns:1fr;max-width:820px">
+        <iframe title="The Philosopher's Compass on Spotify"
+          src="https://open.spotify.com/embed/show/01TWjnf4vQz4rwka1CDkVj/video?utm_source=generator"
+          height="440" loading="lazy"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--band section--tight">
+    <div class="wrap split">
+      <div class="split__head">
+        <p class="eyebrow">Guest &amp; press</p>
+        <h2>Elsewhere</h2>
+      </div>
+      <div>
+        <p style="color:var(--ink-soft);max-width:52ch">I've been interviewed on podcasts, spoken at
+        international conferences, and appeared as a guest on NPR-affiliate radio. A few
+        conversations:</p>
+
+        <ul class="clips" style="margin-bottom:2.25rem">
+          <li class="clip">
+            <a href="https://www.kcrw.com/shows/life-examined/stories/meredith-kunz-interview-parenting-tips-stoicism-letting-go">How
+            Stoic Philosophy Can Change Parents’ Lives</a>
+            <span class="clip__meta">KCRW · Life Examined · 2021</span>
+          </li>
+        </ul>
+
+        <div class="embeds">
+          <iframe title="Podcast episode" src="https://open.spotify.com/embed/episode/0V31berXcE5H8wZIDwS4mE?utm_source=generator" height="176" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe title="Podcast episode" src="https://open.spotify.com/embed/episode/3QJoCisEO9tvgPQ6ZmS5tC?utm_source=generator" height="176" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe title="Podcast show" src="https://open.spotify.com/embed/show/7JMeh4FedVZ8nsw1fzoGtS?utm_source=generator" height="176" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--ghost" href="index.html#contact">Invite me on your show</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap site-foot__inner">
+    <p class="copyright">© <span id="yr">2026</span> Meredith Alexander Kunz. All rights reserved.</p>
+    <nav class="social">
+      <a href="https://substack.com/@thestoicmom">Substack</a>
+      <a href="https://www.linkedin.com/in/meredithkunz/">LinkedIn</a>
+      <a href="https://www.instagram.com/the.stoic.mom/">Instagram</a>
+      <a href="https://bsky.app/profile/stoicwoman.bsky.social">Bluesky</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var t = document.querySelector('.nav-toggle'), n = document.getElementById('nav');
+  t.addEventListener('click', function () {
+    var open = n.classList.toggle('is-open');
+    t.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
