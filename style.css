@@ -159,6 +159,8 @@ p { margin: 0 0 1.15em; }
 
 /* ---------- Hero ---------- */
 
+.hero { padding: clamp(3.5rem, 8vw, 6.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
+
 .hero h1 { margin-bottom: 1.4rem; max-width: 16ch; }
 
 /* headline is one ink colour, all roman — the accent does structural
@@ -171,6 +173,14 @@ p { margin: 0 0 1.15em; }
   height: 4px;
   background: var(--accent);
   margin-top: 2.1rem;
+}
+
+.hero__lede { max-width: 54ch; }
+
+/* Portrait now lives beside the bio, where a photo belongs */
+.bio-portrait {
+  margin: 2rem 0 0;
+  max-width: 340px;
 }
 
 /* ---------- Card row ---------- */
