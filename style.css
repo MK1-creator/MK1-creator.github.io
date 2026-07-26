@@ -159,16 +159,18 @@ p { margin: 0 0 1.15em; }
 
 /* ---------- Hero ---------- */
 
-.hero { padding: clamp(3.5rem, 8vw, 6.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
-
 .hero h1 { margin-bottom: 1.4rem; max-width: 16ch; }
-.hero h1 em { font-style: italic; color: var(--accent); }
-.hero__lede { max-width: 54ch; }
 
-/* Portrait now lives beside the bio, where a photo belongs */
-.bio-portrait {
-  margin: 2rem 0 0;
-  max-width: 340px;
+/* headline is one ink colour, all roman — the accent does structural
+   work instead: a rule beneath the headline, in the editorial tradition */
+.hero h1 em { font-style: normal; color: inherit; }
+.hero h1::after {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 4px;
+  background: var(--accent);
+  margin-top: 2.1rem;
 }
 
 /* ---------- Card row ---------- */
