@@ -6,8 +6,8 @@
   --ink:        #12100E;
   --ink-soft:   #46413B;
   --ink-faint:  #8A837A;
-  --paper:      #FFFFFF;
-  --band:       #F4F2EE;
+  --paper:      #FAF8F4;
+  --band:       #F1EDE5;
   --rule:       #E2DED7;
   --accent:     #C0392B;
   --accent-dk:  #98291D;
@@ -95,14 +95,14 @@ p { margin: 0 0 1.15em; }
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 0.95em 1.7em;
-  border: 1px solid var(--ink);
-  background: var(--ink);
+  border: 1px solid var(--accent);
+  background: var(--accent);
   color: #fff;
   text-decoration: none;
   transition: background .18s ease, color .18s ease, border-color .18s ease;
   cursor: pointer;
 }
-.btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn:hover { background: var(--accent-dk); border-color: var(--accent-dk); color: #fff; }
 
 .btn--ghost { background: transparent; color: var(--ink); }
 .btn--ghost:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
@@ -244,6 +244,9 @@ p { margin: 0 0 1.15em; }
   color: var(--ink);
 }
 .prose a { color: var(--accent); text-decoration-color: rgba(192,57,43,.35); font-weight: 500; }
+.prose a.btn { color: #fff; font-weight: 600; text-decoration: none; }
+.prose a.btn--ghost { color: var(--ink); }
+.prose a.btn--ghost:hover { color: #fff; }
 .prose cite { font-style: italic; }
 
 /* ---------- Facts strip ---------- */
@@ -310,6 +313,47 @@ p { margin: 0 0 1.15em; }
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--ink-faint);
+}
+
+/* ---------- Book cards (inside Selected work) ---------- */
+
+.bookcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem 2rem;
+  border-top: 1px solid var(--ink);
+  padding-top: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+.bookcard {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 1.1rem;
+  align-items: start;
+  text-decoration: none;
+}
+.bookcard img {
+  width: 78px;
+  height: auto;
+  box-shadow: 0 10px 22px -10px rgba(18,16,14,.45);
+}
+.bookcard h4 {
+  margin: 0 0 0.3rem;
+  font-family: var(--f-serif);
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+}
+.bookcard:hover h4 { color: var(--accent); }
+.bookcard span {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  line-height: 1.5;
 }
 
 /* ---------- Quote band ---------- */
@@ -389,7 +433,7 @@ p { margin: 0 0 1.15em; }
   font: inherit;
   font-size: 1rem;
   color: var(--ink);
-  background: var(--paper);
+  background: #fff;
   border: 1px solid var(--rule);
   padding: 0.8rem 0.9rem;
   border-radius: 0;
