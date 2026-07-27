@@ -315,46 +315,23 @@ p { margin: 0 0 1.15em; }
   color: var(--ink-faint);
 }
 
-/* ---------- Book cards (inside Selected work) ---------- */
+/* ---------- Books inside Selected work ----------
+   same list rhythm as the clips, with a small cover as an accent */
 
-.bookcards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem 2rem;
-  border-top: 1px solid var(--ink);
-  padding-top: 1.5rem;
-  margin-bottom: 2.75rem;
+.clip--book a {
+  display: flex;
+  align-items: center;
+  gap: 1.05rem;
+  padding: 0.95rem 0 1rem;
 }
-.bookcard {
-  display: grid;
-  grid-template-columns: 78px minmax(0, 1fr);
-  gap: 1.1rem;
-  align-items: start;
-  text-decoration: none;
+.clip--book img {
+  width: 40px;
+  flex: none;
+  box-shadow: 0 5px 12px -5px rgba(18,16,14,.45);
 }
-.bookcard img {
-  width: 78px;
-  height: auto;
-  box-shadow: 0 10px 22px -10px rgba(18,16,14,.45);
-}
-.bookcard h4 {
-  margin: 0 0 0.3rem;
-  font-family: var(--f-serif);
-  font-weight: 500;
-  font-size: 1.15rem;
-  line-height: 1.2;
-  letter-spacing: -0.012em;
-}
-.bookcard:hover h4 { color: var(--accent); }
-.bookcard span {
-  display: block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-faint);
-  line-height: 1.5;
-}
+.clip--book .clip__title { flex: 1; }
+.clip--book + .clip .clip__meta,
+.clip--book .clip__meta { margin-top: -0.5rem; }
 
 /* ---------- Quote band ---------- */
 
