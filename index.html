@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 
 <script type="application/ld+json">
 {
@@ -52,8 +52,8 @@
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
     <nav class="nav" id="nav">
       <a href="index.html" aria-current="page">Home</a>
-      <a href="#about">About</a>
-      <a href="#writing">Writing</a>
+      <a href="about.html">About</a>
+      <a href="writing.html">Writing</a>
       <a href="books.html">Books</a>
       <a href="podcast.html">Podcast</a>
       <a href="coaching.html">Coaching</a>
@@ -87,17 +87,17 @@
   <!-- ============ THREE DOORS ============ -->
   <div class="wrap">
     <div class="cards">
-      <a class="card" href="#about">
+      <a class="card" href="about.html">
         <span class="card__label">AI Communications</span>
         <h3>Adobe</h3>
         <p>Director, Research and Innovation Communications — leading the team that tells the story of a world-class AI research lab.</p>
         <span class="card__more">About my work →</span>
       </a>
-      <a class="card" href="books.html">
+      <a class="card" href="writing.html">
         <span class="card__label">Author</span>
         <h3>Beyond Stoicism</h3>
         <p>With Massimo Pigliucci and Gregory Lopez. Published in the UK as <cite>Live Like a Philosopher</cite>.</p>
-        <span class="card__more">The books →</span>
+        <span class="card__more">Selected work →</span>
       </a>
       <a class="card" href="coaching.html">
         <span class="card__label">Coaching</span>
@@ -108,84 +108,6 @@
     </div>
   </div>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
-    <div class="wrap split">
-      <div class="split__head">
-        <p class="eyebrow">About</p>
-        <h2>Bio</h2>
-        <figure class="bio-portrait">
-          <img src="images/portrait.jpg"
-               alt="Portrait of Meredith Alexander Kunz"
-               width="760" height="760"
-               style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover">
-        </figure>
-      </div>
-      <div class="prose">
-        <p>I work at the intersection of AI innovation, strategy, and technology storytelling. At
-        Adobe, I lead research and innovation communications — a program I built from the ground
-        up. I lead a communications team that partners with researchers across a world-class lab —
-        generative and agentic AI, LLMs, computer vision, video, audio, and 3D — to tell the story
-        of their work.</p>
-
-        <p>Much of that work is strategy rather than communications in the traditional sense:
-        building systems that carry research breakthroughs into executive alignment, product
-        influence, and public impact. I joined as Adobe Research's founding science writer and have
-        been promoted five times in eight years — growing the lab's social reach by more than 700%,
-        directing executive messaging that helped secure multi-million-dollar funding for the
-        generative AI roadmap, and overseeing a program that helped transfer research into Firefly,
-        Photoshop, Lightroom, Premiere Pro, and Acrobat.</p>
-
-        <p>Before Adobe, I worked as a journalist and communications strategist covering
-        technology and research. My writing has appeared in <cite>Newsweek</cite>, the <cite>San
-        Francisco Chronicle</cite>, and <cite>Stanford Magazine</cite>. At Stanford, my work supported major
-        interdisciplinary research initiatives and philanthropic investments of more than
-        $10 million.</p>
-
-        <p>Alongside this work, I write and speak on ethics and practical philosophy. I'm
-        co-author of <cite>Beyond Stoicism</cite> with Massimo Pigliucci and Gregory Lopez,
-        published in 2025 and now out in Spanish, with a Chinese edition on the way. I also host
-        <a href="podcast.html">The Philosopher's Compass</a> podcast and work as a certified
-        executive coach.</p>
-
-        <dl class="facts">
-          <div class="fact">
-            <dt>Books</dt>
-            <dd><a href="books.html">Beyond Stoicism</a> (2025) · <a href="books.html">Live Like a
-            Philosopher</a>, UK edition · Words That Carry Us</dd>
-          </div>
-          <div class="fact">
-            <dt>Podcast</dt>
-            <dd><a href="podcast.html">The Philosopher's Compass</a>, host</dd>
-          </div>
-          <div class="fact">
-            <dt>Writing</dt>
-            <dd><a href="https://substack.com/@thestoicmom">The Stoic Mom</a>, creator and author
-            since 2016 — on Substack since 2022</dd>
-          </div>
-          <div class="fact">
-            <dt>Previously</dt>
-            <dd>Stanford University · Journalist and communications strategist covering technology
-            and research</dd>
-          </div>
-          <div class="fact">
-            <dt>Education</dt>
-            <dd>Harvard University, A.B. History &amp; Literature, summa cum laude, Phi Beta Kappa ·
-            Stanford University, M.A. History · École Normale Supérieure, Paris</dd>
-          </div>
-          <div class="fact">
-            <dt>Affiliations</dt>
-            <dd>Adobe · Centre for the Study and Application of Stoicism, Royal Holloway ·
-            National Association of Science Writers</dd>
-          </div>
-          <div class="fact">
-            <dt>Credentials</dt>
-            <dd>Certified Professional Co-Active Coach (CPCC) · Associate Certified Coach (ACC)</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </section>
 
   <!-- ============ THROUGH-LINE ============ -->
   <section class="quote-band">
@@ -198,27 +120,15 @@
     </div>
   </section>
 
-  <!-- ============ SELECTED WRITING ============
-       TO ADD A PIECE: copy one <li> block below and fill in the three parts —
-         href="..."      the link to the article
-         the title       between the <a> tags
-         clip__meta      publication and year
-       Delete any rows you don't use. Order them best-first, not newest-first.
-  -->
-  <section class="section section--band" id="writing">
+  <!-- ============ RECENT ============ -->
+  <section class="section section--band section--tight">
     <div class="wrap split">
       <div class="split__head">
         <p class="eyebrow">Writing</p>
-        <h2>Selected work</h2>
-        <p style="color:var(--ink-soft);max-width:30ch">Two books on ancient philosophy —
-        plus translating frontier AI research for general readers, and writing on applying
-        ancient philosophy to modern life.</p>
-        <p style="color:var(--ink-faint);font-size:0.84rem;max-width:30ch">Adobe Research posts are
-        written with the research teams and published without individual bylines.</p>
+        <h2>Recent</h2>
       </div>
       <div>
-        <p class="clips__group">Books</p>
-        <ul class="clips" style="margin-bottom:2.5rem">
+        <ul class="clips">
           <li class="clip clip--book">
             <a href="books.html" style="display:flex;align-items:center;gap:1.05rem">
               <img src="images/beyond_stoicism.jpg" alt="" loading="lazy" width="40" height="60" style="width:40px;height:auto;flex:none">
@@ -226,156 +136,19 @@
             </a>
             <span class="clip__meta">The Experiment · 2025 · with Massimo Pigliucci &amp; Gregory Lopez</span>
           </li>
-          <li class="clip clip--book">
-            <a href="books.html" style="display:flex;align-items:center;gap:1.05rem">
-              <img src="images/livelike.jpg" alt="" loading="lazy" width="40" height="61" style="width:40px;height:auto;flex:none">
-              <span class="clip__title">Live Like a Philosopher</span>
-            </a>
-            <span class="clip__meta">Headline Press · 2025 · UK edition</span>
-          </li>
-        </ul>
-
-        <p class="clips__group">AI &amp; computer science</p>
-        <ul class="clips">
           <li class="clip">
             <a href="https://research.adobe.com/news/cvpr-2026-adobe-researchers-present-75-papers-on-the-frontier-of-ai/">CVPR
             2026: Adobe Researchers Present 75+ Papers on the Frontier of AI</a>
             <span class="clip__meta">Adobe Research · 2026 · Conference package, with video</span>
           </li>
           <li class="clip">
-            <a href="https://research.adobe.com/news/teaching-an-ai-agent-to-retouch-photos-retouchiq-at-cvpr-2026/">Teaching
-            an AI Agent to Retouch Photos: RetouchIQ at CVPR 2026</a>
-            <span class="clip__meta">Adobe Research · 2026 · Agentic AI, CVPR</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/motionstream-control-in-ai-video-creation/">MotionStream
-            Demonstrates Real-Time Control in AI Video Creation</a>
-            <span class="clip__meta">Adobe Research · 2026 · Generative video</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/teamfusion-using-ai-agents-to-represent-every-voice-in-team-decisions/">TeamFusion:
-            Using AI Agents to Represent Every Voice in Team Decisions</a>
-            <span class="clip__meta">Adobe Research · 2026 · Multi-agent systems, ACL</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/when-the-music-fits-vidtune-helps-video-creators-find-the-right-soundtrack/">When
-            the Music Fits: VidTune Helps Video Creators Find the Right Soundtrack</a>
-            <span class="clip__meta">Adobe Research · 2026 · Generative audio, CHI</span>
-          </li>
-          <!-- SWAP IN ANY OF THESE: delete the surrounding comment markers to publish one.
-          <li class="clip">
-            <a href="https://research.adobe.com/news/look-here-researcher-predicts-what-attracts-attention-in-photos-and-designs/">Look Here: Researcher Predicts What Attracts Attention in Photos and Designs</a>
-            <span class="clip__meta">Adobe Research · Researcher profile</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/slideredit-at-cvpr-2026/">Giving Image Editors Adjustable Control Over Editing Instructions: SliderEdit at CVPR 2026</a>
-            <span class="clip__meta">Adobe Research · 2026 · Image editing, CVPR</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/superfit-at-cvpr-2026-compresses-3d-shapes-into-editable-building-blocks/">A Single Primitive to Rule Them All: SuperFit at CVPR 2026 Compresses 3D Shapes into Editable Building Blocks</a>
-            <span class="clip__meta">Adobe Research · 2026 · 3D graphics, CVPR</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/sigma-gen-placing-any-subject-anywhere-exactly-where-you-want-it/">SIGMA-GEN: Placing Any Subject, Anywhere, Exactly Where You Want It</a>
-            <span class="clip__meta">Adobe Research · 2026 · Generative imaging</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/vidmento-filling-the-gaps-in-your-video-story-with-contextual-ai/">Vidmento: Filling the Gaps in Your Video Story with Generative AI</a>
-            <span class="clip__meta">Adobe Research · 2026 · Generative video, CHI</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/agentic-design-review-system-teaching-ai-to-review-graphic-designs-the-way-experts-do/">Agentic Design Review System: Teaching AI to Review Graphic Designs the Way Experts Do</a>
-            <span class="clip__meta">Adobe Research · 2026 · Multi-agent systems, AAAI</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/object-wiper-a-smarter-way-to-erase-objects-from-video/">Object-WIPER: A Smarter Way to Erase Objects from Video</a>
-            <span class="clip__meta">Adobe Research · 2026 · Diffusion models, CVPR</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/researchers-ask-will-you-remember-that-video-tomorrow/">Researchers Ask: Will You Remember that Video Tomorrow?</a>
-            <span class="clip__meta">Adobe Research · Computer vision</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/fresco-the-future-of-painting-born-of-a-union-of-art-and-science/">Fresco: The Future of Painting, Born of a Union of Art and Science</a>
-            <span class="clip__meta">Adobe Research · Art and science</span>
-          </li>
-          -->
-        </ul>
-
-        <p class="clips__group" style="margin-top:2.75rem">Philosophy &amp; the good life</p>
-        <ul class="clips">
-          <li class="clip">
             <a href="https://bigthink.com/thinking/navigate-to-the-three-ports-of-ancient-philosophy-to-find-the-good-life/">Navigate
             to the “Three Ports” of Ancient Philosophy to Find the Good Life</a>
             <span class="clip__meta">Big Think · 2025 · with Gregory Lopez</span>
           </li>
-          <li class="clip">
-            <a href="https://thestoicgym.com/the-stoic-magazine/article/613">Life is a festival —
-            if you know how to look</a>
-            <span class="clip__meta">The Stoic Magazine · 2022</span>
-          </li>
-          <li class="clip">
-            <a href="https://thestoicgym.com/the-stoic-magazine/article/656">If you can’t become a
-            Stoic sage, why should you even try?</a>
-            <span class="clip__meta">The Stoic Magazine · 2023</span>
-          </li>
-          <li class="clip">
-            <a href="https://modernstoicism.com/stoic-parenting-in-the-age-of-distraction-by-meredith-kunz/">Stoic
-            Parenting in the Age of Distraction</a>
-            <span class="clip__meta">Modern Stoicism</span>
-          </li>
-          <!-- IN RESERVE: uncomment to publish.
-          <li class="clip">
-            <a href="https://modernstoicism.com/a-stoic-approach-to-parenting-helping-parents-and-kids-thrive-by-meredith-alexander-kunz/">A Stoic Approach to Parenting: Helping Parents and Kids Thrive</a>
-            <span class="clip__meta">Modern Stoicism</span>
-          </li>
-          <li class="clip">
-            <a href="https://thestoicgym.com/the-stoic-magazine/article/603">Meditating my way to the inner citadel</a>
-            <span class="clip__meta">The Stoic Magazine · 2022</span>
-          </li>
-          <li class="clip">
-            <a href="https://thestoicgym.com/the-stoic-magazine/article/560">The ancient Cynics: a backdrop to Stoicism</a>
-            <span class="clip__meta">The Stoic Magazine</span>
-          </li>
-          -->
-          <!-- ADD A PIECE: copy the block below, uncomment it, fill in the three parts.
-          <li class="clip">
-            <a href="URL HERE">Headline of the piece</a>
-            <span class="clip__meta">Publication · Year</span>
-          </li>
-          -->
         </ul>
         <div class="btn-row">
-          <a class="btn btn--ghost" href="https://substack.com/@thestoicmom">More on Substack</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ THE STOIC MOM ============ -->
-  <section class="section" id="stoicmom">
-    <div class="wrap split">
-      <div class="split__head">
-        <p class="eyebrow">Blog</p>
-        <h2>The Stoic Mom</h2>
-        <p style="color:var(--ink-soft);max-width:30ch"><em>Because we could all use a little
-        wisdom.</em></p>
-      </div>
-      <div class="prose">
-        <p>I started The Stoic Mom in October 2016, when my daughters were ten and eight and I was
-        losing to Silicon Valley's parenting culture — the extracurriculars, the comparison, the
-        conviction that any misstep of mine would cost my kids their futures.</p>
-
-        <p>I've been writing about it ever since — first at thestoicmom.com, and on Substack
-        since 2022, where I've published more than fifty posts.</p>
-
-        <p>Much of that writing pushes back on what's been made of this philosophy online: the
-        “broicism” of cold self-reliance and extreme self-sufficiency, and the $toicism that sells
-        ancient virtue as a productivity hack. Neither is true to the philosophy. Both are worth
-        arguing with.</p>
-
-        <div class="btn-row">
-          <a class="btn" href="https://substack.com/@thestoicmom">Read The Stoic Mom</a>
+          <a class="btn btn--ghost" href="writing.html">All selected work</a>
         </div>
       </div>
     </div>
