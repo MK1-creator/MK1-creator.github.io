@@ -326,6 +326,7 @@ p { margin: 0 0 1.15em; }
 }
 .clip--book img {
   width: 40px;
+  height: auto;
   flex: none;
   box-shadow: 0 5px 12px -5px rgba(18,16,14,.45);
 }
