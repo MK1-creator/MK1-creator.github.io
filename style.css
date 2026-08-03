@@ -4,8 +4,8 @@
 
 :root {
   --ink:        #12100E;
-  --ink-soft:   #46413B;
-  --ink-faint:  #8A837A;
+  --ink-soft:   #2E2A25;
+  --ink-faint:  #625B52;
   --paper:      #FAF8F4;
   --band:       #F1EDE5;
   --rule:       #E2DED7;
@@ -191,6 +191,7 @@ p { margin: 0 0 1.15em; }
   color: var(--ink-soft);
   max-width: 34ch;
   margin: 0;
+  text-wrap: balance;
 }
 
 /* full-bleed banner image */
@@ -208,9 +209,9 @@ p { margin: 0 0 1.15em; }
 .briefly__body { max-width: 56ch; }
 .briefly__body p {
   font-family: var(--f-serif);
-  font-size: 1.16rem;
-  line-height: 1.62;
-  color: var(--ink-soft);
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--ink);
 }
 .briefly__body a { color: var(--accent); text-decoration-color: rgba(192,57,43,.35); }
 .briefly__verbs {
@@ -525,32 +526,36 @@ p { margin: 0 0 1.15em; }
 }
 
 
-/* ---------- Marquee ---------- */
 
-.marquee {
+
+/* ---------- Topic drift ---------- */
+
+.ticker {
   overflow: hidden;
-  border-top: 1px solid var(--rule);
+  background: var(--paper);
   border-bottom: 1px solid var(--rule);
-  background: var(--ink);
-  padding: 1.05rem 0;
+  padding: 1.35rem 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
 }
-.marquee__track {
+.ticker__track {
   display: flex;
   width: max-content;
-  animation: marquee 38s linear infinite;
+  animation: drift 110s linear infinite;
 }
-.marquee span {
-  font-family: var(--f-display);
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
+.ticker:hover .ticker__track { animation-play-state: paused; }
+.ticker span {
+  font-family: var(--f-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #F1EDE5;
+  color: #A29A90;
   white-space: nowrap;
-  padding-right: 2.6rem;
+  padding-right: 3.2rem;
 }
-.marquee span em { font-style: normal; color: var(--accent); }
-@keyframes marquee { to { transform: translateX(-50%); } }
+.ticker span em { font-style: normal; color: var(--accent); opacity: .8; }
+@keyframes drift { to { transform: translateX(-50%); } }
 
 /* ---------- Motion on scroll ---------- */
 
@@ -563,5 +568,5 @@ p { margin: 0 0 1.15em; }
 
 @media (prefers-reduced-motion: reduce) {
   .rise { opacity: 1; transform: none; transition: none; }
-  .marquee__track { animation: none; }
+  .ticker__track { animation: none; }
 }
