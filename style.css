@@ -9,8 +9,8 @@
   --paper:      #FAF8F4;
   --band:       #F1EDE5;
   --rule:       #E2DED7;
-  --accent:     #C0392B;
-  --accent-dk:  #98291D;
+  --accent:     #9C5230;
+  --accent-dk:  #7C3D22;
   --forest:     #172D21;
   --sage:       #8A9A76;
 
@@ -207,7 +207,7 @@ p { margin: 0 0 1.15em; }
   line-height: 1.65;
   color: var(--ink);
 }
-.briefly__body a { color: var(--accent); text-decoration-color: rgba(192,57,43,.35); }
+.briefly__body a { color: var(--accent); text-decoration-color: rgba(156,82,48,.38); }
 .briefly__verbs {
   border-top: 1px solid var(--rule);
   padding-top: 1.4rem;
@@ -260,7 +260,7 @@ p { margin: 0 0 1.15em; }
   line-height: 1.55;
   color: var(--ink);
 }
-.prose a { color: var(--accent); text-decoration-color: rgba(192,57,43,.35); font-weight: 500; }
+.prose a { color: var(--accent); text-decoration-color: rgba(156,82,48,.38); font-weight: 500; }
 .prose a.btn { color: #fff; font-weight: 600; text-decoration: none; }
 .prose a.btn--ghost { color: var(--ink); }
 .prose a.btn--ghost:hover { color: #fff; }
@@ -290,7 +290,7 @@ p { margin: 0 0 1.15em; }
   font-size: 1.02rem;
   line-height: 1.45;
 }
-.fact dd a { color: var(--accent); text-decoration-color: rgba(192,57,43,.35); }
+.fact dd a { color: var(--accent); text-decoration-color: rgba(156,82,48,.38); }
 
 @media (max-width: 560px) {
   .fact { grid-template-columns: 1fr; }
