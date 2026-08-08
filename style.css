@@ -11,6 +11,8 @@
   --rule:       #E2DED7;
   --accent:     #C0392B;
   --accent-dk:  #98291D;
+  --forest:     #172D21;
+  --sage:       #8A9A76;
 
   --max:  1180px;
   --gut:  clamp(20px, 5vw, 56px);
@@ -170,26 +172,18 @@ p { margin: 0 0 1.15em; }
 .hero { padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2rem, 4vw, 3rem); }
 
 .hero__name {
-  font-size: clamp(2.6rem, 7.2vw, 5.4rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  max-width: 13ch;
-  margin-bottom: 1.8rem;
-}
-.hero__name::after {
-  content: "";
-  display: block;
-  width: 92px;
-  height: 4px;
-  background: var(--accent);
-  margin-top: 1.8rem;
+  font-size: clamp(2.8rem, 7.8vw, 5.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.042em;
+  margin-bottom: 1.6rem;
+  text-wrap: balance;
 }
 .hero__promise {
   font-family: var(--f-serif);
   font-size: clamp(1.3rem, 2.4vw, 1.75rem);
   line-height: 1.4;
   color: var(--ink-soft);
-  max-width: 34ch;
+  max-width: 48ch;
   margin: 0;
   text-wrap: balance;
 }
@@ -482,8 +476,8 @@ p { margin: 0 0 1.15em; }
 /* a page-head already provides the breathing room above the first section */
 .page-head + .section { padding-top: 0; }
 .book:first-of-type { padding-top: clamp(1.25rem, 2.5vw, 2rem); }
-.page-head h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); margin-bottom: 1.2rem; }
-.page-head .lede { max-width: 56ch; }
+.page-head h1 { font-size: clamp(2.5rem, 6.6vw, 4.8rem); margin-bottom: 1.3rem; text-wrap: balance; }
+.page-head .lede { max-width: 62ch; }
 
 /* ---------- Responsive ---------- */
 
@@ -532,9 +526,8 @@ p { margin: 0 0 1.15em; }
 
 .ticker {
   overflow: hidden;
-  background: var(--paper);
-  border-bottom: 1px solid var(--rule);
-  padding: 1.35rem 0;
+  background: var(--forest);
+  padding: 1.4rem 0;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
           mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
 }
@@ -550,11 +543,11 @@ p { margin: 0 0 1.15em; }
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #A29A90;
+  color: #DCE2D2;
   white-space: nowrap;
   padding-right: 3.2rem;
 }
-.ticker span em { font-style: normal; color: var(--accent); opacity: .8; }
+.ticker span em { font-style: normal; color: var(--sage); }
 @keyframes drift { to { transform: translateX(-50%); } }
 
 /* ---------- Motion on scroll ---------- */
