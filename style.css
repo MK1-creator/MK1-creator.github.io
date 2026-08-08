@@ -228,7 +228,7 @@ p { margin: 0 0 1.15em; }
   font-size: clamp(1.3rem, 2.3vw, 1.7rem);
   line-height: 1.4;
   margin: 0;
-  max-width: 30ch;
+  max-width: 34ch;
 }
 .now__sub p { color: var(--ink-soft); margin: 0; }
 .now__sub strong { font-weight: 500; }
