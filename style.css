@@ -14,7 +14,7 @@
   --forest:     #172D21;
   --sage:       #8A9A76;
 
-  --max:  1180px;
+  --max:  960px;
   --gut:  clamp(20px, 5vw, 56px);
 
   --f-serif: "Newsreader", Georgia, "Times New Roman", serif;
@@ -234,7 +234,6 @@ p { margin: 0 0 1.15em; }
   gap: clamp(1.5rem, 5vw, 4rem);
   align-items: start;
 }
-.briefly__body { max-width: 56ch; }
 .briefly__body p {
   font-family: var(--f-serif);
   font-size: 1.2rem;
@@ -271,6 +270,29 @@ p { margin: 0 0 1.15em; }
   .briefly, .now { grid-template-columns: 1fr; }
 }
 
+/* ---------- One grid for every homepage section ---------- */
+
+.sec { padding-block: clamp(2.5rem, 4.8vw, 3.6rem); }
+.sec--band { background: var(--band); }
+.hgrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.28fr) minmax(0, 1fr);
+  gap: clamp(1.75rem, 4.5vw, 3.5rem);
+  align-items: start;
+}
+.hgrid > .eyebrow { position: sticky; top: 92px; margin-bottom: 0; }
+.hgrid__body > h2 { margin-bottom: 1.25rem; }
+.hgrid__body > .note {
+  font-size: 0.88rem;
+  color: var(--ink-faint);
+  margin: 0 0 1.7rem;
+  max-width: 46ch;
+}
+@media (max-width: 860px) {
+  .hgrid { grid-template-columns: 1fr; }
+  .hgrid > .eyebrow { position: static; margin-bottom: 1.1rem; }
+}
+
 /* ---------- Sections ---------- */
 
 .section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
@@ -286,9 +308,8 @@ p { margin: 0 0 1.15em; }
 .split__head { position: sticky; top: 100px; }
 .split__head h2 { margin-bottom: 0.5rem; }
 
-.prose { max-width: 62ch; }
 .prose p { color: var(--ink-soft); }
-.prose p:first-child {
+.prose > p:first-of-type {
   font-family: var(--f-serif);
   font-size: 1.28rem;
   line-height: 1.55;
@@ -300,16 +321,6 @@ p { margin: 0 0 1.15em; }
 .prose a.btn--ghost:hover { color: #fff; }
 .prose cite { font-style: italic; }
 
-/* ---------- Point of view ---------- */
-
-#view { padding-block: clamp(2rem, 3.6vw, 2.9rem) clamp(3rem, 6vw, 4.5rem); }
-.view__head {
-  max-width: 30ch;
-  margin-bottom: 1.75rem;
-  text-wrap: balance;
-}
-.view__body { max-width: 58ch; }
-
 /* ---------- How I can help ---------- */
 
 .offers { margin: 0; border-top: 1px solid var(--ink); }
@@ -319,7 +330,7 @@ p { margin: 0 0 1.15em; }
   letter-spacing: -0.022em;
   margin: 0 0 0.4rem;
 }
-.offer p { margin: 0; color: var(--ink-soft); max-width: 58ch; }
+.offer p { margin: 0; color: var(--ink-soft); }
 .offer a { color: var(--accent); text-decoration-color: rgba(156,82,48,.38); }
 
 /* ---------- Facts strip ---------- */
