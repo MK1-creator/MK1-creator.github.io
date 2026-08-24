@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=16">
+<link rel="stylesheet" href="style.css?v=17">
 
 <script type="application/ld+json">
 {
@@ -76,14 +76,24 @@
   </section>
 
   <figure class="banner rise">
-    <img src="images/hero-wide.jpg" alt="Meredith Alexander Kunz at Adobe in San Jose"
-         width="1800" height="750" style="display:block;width:100%;height:auto">
+    <picture>
+      <source media="(max-width: 700px)" srcset="images/hero-square.jpg" width="1200" height="900">
+      <img src="images/hero-wide.jpg" alt="Meredith Alexander Kunz at Adobe in San Jose"
+           width="1800" height="750" style="display:block;width:100%;height:auto">
+    </picture>
   </figure>
 
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker__track"><span>AI research <em>·</em></span><span>Stoicism <em>·</em></span><span>Books <em>·</em></span><span>The Philosopher’s Compass <em>·</em></span><span>Science writing <em>·</em></span><span>Practical philosophy <em>·</em></span><span>Coaching <em>·</em></span><span>AI research <em>·</em></span><span>Stoicism <em>·</em></span><span>Books <em>·</em></span><span>The Philosopher’s Compass <em>·</em></span><span>Science writing <em>·</em></span><span>Practical philosophy <em>·</em></span><span>Coaching <em>·</em></span></div>
-  </div>
 
+
+  <section class="stats-band rise">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat"><b>20+</b><span>cross-functional teams partnered with across Adobe</span></div>
+        <div class="stat"><b>700%+</b><span>growth in research social reach</span></div>
+        <div class="stat"><b>37%</b><span>year-over-year growth in research news output</span></div>
+      </div>
+    </div>
+  </section>
 
   <!-- ============ BRIEFLY ============ -->
   <section class="rise section section--tight" id="briefly">
@@ -105,16 +115,6 @@
         <a href="about.html">lead research communications</a>,
         <a href="podcast.html">host a podcast</a>, and
         <a href="coaching.html">coach</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="rise" style="padding-bottom:clamp(3rem,6vw,4.5rem)">
-    <div class="wrap">
-      <div class="stats">
-        <div class="stat"><b>20+</b><span>cross-functional teams partnered with across Adobe</span></div>
-        <div class="stat"><b>700%+</b><span>growth in research social reach</span></div>
-        <div class="stat"><b>37%</b><span>year-over-year growth in research news output</span></div>
       </div>
     </div>
   </section>
