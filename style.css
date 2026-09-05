@@ -169,7 +169,7 @@ p { margin: 0 0 1.15em; }
 
 /* ---------- Hero: name first, promise second ---------- */
 
-.hero { padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2rem, 4vw, 3rem); }
+.hero { padding: clamp(2.6rem, 5.5vw, 4.2rem) 0 clamp(1.9rem, 3.5vw, 2.6rem); }
 
 .hero__name {
   font-size: clamp(2.5rem, 7.8vw, 5.8rem);
@@ -177,6 +177,44 @@ p { margin: 0 0 1.15em; }
   letter-spacing: -0.042em;
   margin-bottom: 1.6rem;
   text-wrap: balance;
+}
+
+/* Short enough to be set as a headline again. */
+.hero__lede {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 3.6vw, 2.55rem);
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.15rem;
+  max-width: 34ch;
+  text-wrap: balance;
+}
+.hero__sub {
+  font-family: var(--f-serif);
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin: 0;
+}
+
+/* the technology list, demoted to a caption under the photograph */
+.banner__caption {
+  font-family: var(--f-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0.95rem 0 0;
+}
+.sec__intro {
+  font-family: var(--f-serif);
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0 0 2rem;
 }
 .hero__promise {
   font-family: var(--f-serif);
@@ -220,6 +258,85 @@ p { margin: 0 0 1.15em; }
   .stats { grid-template-columns: 1fr; gap: 1.25rem; }
   .stat b { font-size: 1.8rem; margin-bottom: 0.3rem; }
   .stat span { max-width: none; }
+}
+
+/* ---------- Metrics, stated plainly ---------- */
+
+.metrics { display: grid; gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
+.metric {
+  display: grid;
+  grid-template-columns: minmax(0, 0.3fr) minmax(0, 1fr);
+  gap: 0.3rem 1.75rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+.metrics > .metric:last-child { border-bottom: 0; padding-bottom: 0; }
+.metric__value {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0;
+}
+.metric__note { margin: 0; color: var(--ink-soft); font-size: 0.98rem; }
+@media (max-width: 700px) {
+  .metric { grid-template-columns: 1fr; gap: 0.45rem; }
+}
+
+/* ---------- Case studies ---------- */
+
+.cases { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); }
+.case-teaser { border-bottom: 1px solid var(--rule); padding: 1.5rem 0; }
+.case-teaser h3 { margin: 0 0 0.45rem; font-size: 1.2rem; }
+.case-teaser p { margin: 0; color: var(--ink-soft); font-size: 0.98rem; }
+
+.case { padding-block: clamp(2.2rem, 4.5vw, 3.2rem); border-bottom: 1px solid var(--rule); }
+.case:last-of-type { border-bottom: 0; }
+.case__num {
+  font-family: var(--f-sans);
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--accent); margin: 0 0 0.7rem;
+}
+.case > h2 { font-size: clamp(1.6rem, 3vw, 2.15rem); margin-bottom: 1.5rem; }
+.case__rows { margin: 0; }
+.case__row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.3fr) minmax(0, 1fr);
+  gap: 0.35rem 1.75rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--rule);
+}
+.case__row dt {
+  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--ink-faint); padding-top: 0.3rem;
+}
+.case__row dd { margin: 0; color: var(--ink-soft); }
+.case__row dd a { color: var(--accent); text-decoration-color: rgba(156,82,48,.38); }
+@media (max-width: 700px) {
+  .case__row { grid-template-columns: 1fr; }
+  .case__row dt { padding-top: 0; }
+}
+
+/* ---------- Featured writing projects ---------- */
+
+.project { padding-block: 1.8rem; border-bottom: 1px solid var(--rule); }
+.project:first-of-type { border-top: 1px solid var(--ink); }
+.project h3 { margin: 0 0 0.9rem; font-size: 1.24rem; }
+.project h3 a { text-decoration-color: rgba(156,82,48,.38); }
+
+/* ---------- Placeholders awaiting Meredith's input ---------- */
+
+.ph {
+  display: block;
+  border: 1px dashed #C2A88F;
+  background: #FBF4EC;
+  color: #7C3D22;
+  font-family: var(--f-sans);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 0.65rem 0.8rem;
+  margin: 0.15rem 0;
 }
 
 /* full-bleed banner image */
@@ -299,14 +416,6 @@ p { margin: 0 0 1.15em; }
 .section--band { background: var(--band); }
 .section--tight { padding-block: clamp(3rem, 6vw, 4.5rem); }
 
-.split {
-  display: grid;
-  grid-template-columns: minmax(0, 0.42fr) minmax(0, 1fr);
-  gap: clamp(2rem, 6vw, 5rem);
-  align-items: start;
-}
-.split__head { position: sticky; top: 100px; }
-.split__head h2 { margin-bottom: 0.5rem; }
 
 .prose p { color: var(--ink-soft); }
 .prose > p:first-of-type {
@@ -541,7 +650,8 @@ p { margin: 0 0 1.15em; }
 .page-head { padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(1rem, 2vw, 1.5rem); }
 
 /* a page-head already provides the breathing room above the first section */
-.page-head + .section { padding-top: 0; }
+.page-head + .section,
+.page-head + .sec { padding-top: 0; }
 .book:first-of-type { padding-top: clamp(1.25rem, 2.5vw, 2rem); }
 .page-head h1 { font-size: clamp(2.5rem, 6.6vw, 4.8rem); margin-bottom: 1.3rem; text-wrap: balance; }
 .page-head .lede { max-width: 62ch; }
@@ -558,8 +668,6 @@ p { margin: 0 0 1.15em; }
   .cards { grid-template-columns: 1fr; }
   .card { border-right: 0; border-bottom: 1px solid var(--rule); }
   .card:last-child { border-bottom: 0; }
-  .split { grid-template-columns: 1fr; }
-  .split__head { position: static; }
   .book, .book--flip .book__art { grid-template-columns: 1fr; order: 0; }
   .book__art img { max-width: 260px; }
 }
@@ -600,13 +708,13 @@ p { margin: 0 0 1.15em; }
 
 /* ---------- Motion on scroll ---------- */
 
-.rise {
+.js .rise {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1);
 }
-.rise.is-in { opacity: 1; transform: none; }
+.js .rise.is-in { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  .rise { opacity: 1; transform: none; transition: none; }
+  .js .rise { opacity: 1; transform: none; transition: none; }
 }

@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Writing — Meredith Alexander Kunz</title>
-<meta name="description" content="Selected work by Meredith Alexander Kunz: Beyond Stoicism, reporting on frontier AI research at Adobe, and essays on ancient philosophy in modern life.">
+<script>document.documentElement.className += ' js';</script>
+<title>Writing &amp; Media — Meredith Alexander Kunz</title>
+<meta name="description" content="Selected AI and technology communications work by Meredith Alexander Kunz, plus books, philosophy writing, the podcast, and appearances.">
 <link rel="canonical" href="https://meredithkunz.com/writing.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://meredithkunz.com/writing.html">
-<meta property="og:title" content="Writing — Meredith Alexander Kunz">
-<meta property="og:description" content="Selected work by Meredith Alexander Kunz: Beyond Stoicism, reporting on frontier AI research at Adobe, and essays on ancient philosophy in modern life.">
+<meta property="og:title" content="Writing &amp; Media — Meredith Alexander Kunz">
+<meta property="og:description" content="Selected AI and technology communications work, plus books, philosophy writing, the podcast, and appearances.">
 <meta property="og:image" content="https://meredithkunz.com/images/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -18,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=19">
+<link rel="stylesheet" href="style.css?v=28">
 </head>
 <body>
 
@@ -26,13 +27,11 @@
   <div class="site-head__inner">
     <a class="wordmark" href="index.html">Meredith <b>Alexander Kunz</b></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Primary">
       <a href="index.html">Home</a>
+      <a href="work.html">Work &amp; Impact</a>
+      <a href="writing.html" aria-current="page">Writing &amp; Media</a>
       <a href="about.html">About</a>
-      <a href="writing.html" aria-current="page">Writing</a>
-      <a href="books.html">Books</a>
-      <a href="podcast.html">Podcast</a>
-      <a href="coaching.html">Coaching</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </div>
@@ -42,65 +41,139 @@
 
   <section class="page-head">
     <div class="wrap">
-      <p class="eyebrow">Writing</p>
-      <h1>Selected work</h1>
-      <p class="lede">A book on Greek and Roman philosophy and how it can help us today, published
-      in the US, the UK, and Spain, with a Chinese edition on the way. Plus translating frontier AI
-      research for general readers, and writing on Stoicism for everyday life.</p>
+      <p class="eyebrow">Writing &amp; media</p>
+      <h1>Writing and media</h1>
+      <p class="lede">AI and technology communications first, then the books, philosophy writing,
+      podcast, and appearances that make up a second, longer-running body of public work.</p>
     </div>
   </section>
 
-  <!-- ============ SELECTED WRITING ============
-       TO ADD A PIECE: copy one <li> block below and fill in the three parts —
-         href="..."      the link to the article
-         the title       between the <a> tags
-         clip__meta      publication and year
-       Delete any rows you don't use. Order them best-first, not newest-first.
-  -->
-  <section class="section section--tight" id="writing">
-    <div class="wrap split">
-      <div class="split__head">
-        <p class="eyebrow">Published</p>
-        <h2>Books &amp; articles</h2>
-        <p style="color:var(--ink-faint);font-size:0.84rem;max-width:30ch">Adobe Research posts are
-        written with the research teams and published without individual bylines.</p>
-      </div>
-      <div>
-        <p class="clips__group">One book · US and UK editions</p>
-        <ul class="clips" style="margin-bottom:2.5rem">
-          <li class="clip clip--book">
-            <a href="books.html" style="display:flex;align-items:center;gap:1.05rem">
-              <img src="images/beyond_stoicism.jpg" alt="" loading="lazy" width="40" height="60" style="width:40px;height:auto;flex:none">
-              <span class="clip__title">Beyond Stoicism</span>
-            </a>
-            <span class="clip__meta">A Guide to the Good Life with Stoics, Skeptics, Epicureans, and Other Ancient Philosophers<br>The Experiment · 2025 · US edition, with Massimo Pigliucci &amp; Gregory Lopez<br>Also published in Spanish, with a Chinese edition on the way.</span>
-          </li>
-          <li class="clip clip--book">
-            <a href="books.html" style="display:flex;align-items:center;gap:1.05rem">
-              <img src="images/livelike.jpg" alt="" loading="lazy" width="40" height="61" style="width:40px;height:auto;flex:none">
-              <span class="clip__title">Live Like a Philosopher</span>
-            </a>
-            <span class="clip__meta">What the Ancient Greeks and Romans Can Teach Us About Living a Happy Life<br>Headline Press · 2025 · UK edition of <cite>Beyond Stoicism</cite></span>
-          </li>
-        </ul>
+  <!-- ============ AI AND TECHNOLOGY ============ -->
+  <section class="sec rise" id="ai">
+    <div class="wrap hgrid">
+      <p class="eyebrow">AI &amp; technology</p>
+      <div class="hgrid__body">
+        <h2>AI and technology</h2>
+        <p class="note">Adobe Research stories are created collaboratively and published without
+        individual bylines. For each featured project, I've described my role in developing the
+        narrative and bringing the work to its intended audiences.</p>
 
-        <p class="clips__group">AI &amp; computer science</p>
+        <!-- FEATURED PROJECT 1 -->
+        <article class="project">
+          <h3><a href="https://research.adobe.com/news/world-photography-day-adobe-research/">This
+          World Photography Day, Adobe Research Maps How Trust Travels with a Photo</a></h3>
+          <dl class="case__rows">
+            <div class="case__row">
+              <dt>Challenge</dt>
+              <dd><span class="ph">PLACEHOLDER — the editorial problem. For example: several
+              separate research threads on provenance, watermarking, and detection needed to be
+              told as one argument about trust.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>My role</dt>
+              <dd><span class="ph">PLACEHOLDER — state precisely what you did: commissioned,
+              shaped, edited, wrote, interviewed, directed. Do not overstate.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Audience</dt>
+              <dd><span class="ph">PLACEHOLDER — photographers and photojournalists, policy
+              readers, press, general public, or another mix.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Why it mattered</dt>
+              <dd><span class="ph">PLACEHOLDER — why this story was worth telling at that
+              moment.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Result</dt>
+              <dd><span class="ph">PLACEHOLDER — pickup, reach, internal use, or another outcome
+              you can share.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Published</dt>
+              <dd>Adobe Research · August 2026 ·
+              <a href="https://research.adobe.com/news/world-photography-day-adobe-research/">Read
+              the piece</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- FEATURED PROJECT 2 -->
+        <article class="project">
+          <h3><a href="https://research.adobe.com/news/cvpr-2026-adobe-researchers-present-75-papers-on-the-frontier-of-ai/">CVPR
+          2026: Adobe Researchers Present 75+ Papers on the Frontier of AI</a></h3>
+          <dl class="case__rows">
+            <div class="case__row">
+              <dt>Challenge</dt>
+              <dd><span class="ph">PLACEHOLDER — turning a very large volume of conference papers
+              into something a non-specialist reader can navigate and a researcher recognizes as
+              accurate.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>My role</dt>
+              <dd><span class="ph">PLACEHOLDER — your role across the conference package: planning,
+              editorial direction, coordination with researchers, video.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Audience</dt>
+              <dd><span class="ph">PLACEHOLDER — research community, recruiting candidates,
+              internal leadership, press.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Why it mattered</dt>
+              <dd><span class="ph">PLACEHOLDER — what a conference package does for a research
+              organization's standing and recruiting.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Result</dt>
+              <dd><span class="ph">PLACEHOLDER</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Published</dt>
+              <dd>Adobe Research · 2026 · Conference package, with video ·
+              <a href="https://research.adobe.com/news/cvpr-2026-adobe-researchers-present-75-papers-on-the-frontier-of-ai/">Read
+              the piece</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- FEATURED PROJECT 3 -->
+        <article class="project">
+          <h3><a href="https://research.adobe.com/news/teaching-an-ai-agent-to-retouch-photos-retouchiq-at-cvpr-2026/">Teaching
+          an AI Agent to Retouch Photos: RetouchIQ at CVPR 2026</a></h3>
+          <dl class="case__rows">
+            <div class="case__row">
+              <dt>Challenge</dt>
+              <dd><span class="ph">PLACEHOLDER — explaining agentic AI to readers who have no
+              working definition of an agent.</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>My role</dt>
+              <dd><span class="ph">PLACEHOLDER</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Audience</dt>
+              <dd><span class="ph">PLACEHOLDER</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Why it mattered</dt>
+              <dd><span class="ph">PLACEHOLDER</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Result</dt>
+              <dd><span class="ph">PLACEHOLDER</span></dd>
+            </div>
+            <div class="case__row">
+              <dt>Published</dt>
+              <dd>Adobe Research · 2026 · Agentic AI ·
+              <a href="https://research.adobe.com/news/teaching-an-ai-agent-to-retouch-photos-retouchiq-at-cvpr-2026/">Read
+              the piece</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <p class="clips__group" style="margin-top:2.75rem">More AI and computer science work</p>
         <ul class="clips">
-          <li class="clip">
-            <a href="https://research.adobe.com/news/world-photography-day-adobe-research/">This
-            World Photography Day, Adobe Research Maps How Trust Travels with a Photo</a>
-            <span class="clip__meta">Adobe Research · 2026 · Provenance, content authenticity, generative AI</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/cvpr-2026-adobe-researchers-present-75-papers-on-the-frontier-of-ai/">CVPR
-            2026: Adobe Researchers Present 75+ Papers on the Frontier of AI</a>
-            <span class="clip__meta">Adobe Research · 2026 · Conference package, with video</span>
-          </li>
-          <li class="clip">
-            <a href="https://research.adobe.com/news/teaching-an-ai-agent-to-retouch-photos-retouchiq-at-cvpr-2026/">Teaching
-            an AI Agent to Retouch Photos: RetouchIQ at CVPR 2026</a>
-            <span class="clip__meta">Adobe Research · 2026 · Agentic AI, CVPR</span>
-          </li>
           <li class="clip">
             <a href="https://research.adobe.com/news/motionstream-control-in-ai-video-creation/">MotionStream
             Demonstrates Real-Time Control in AI Video Creation</a>
@@ -116,11 +189,7 @@
             the Music Fits: VidTune Helps Video Creators Find the Right Soundtrack</a>
             <span class="clip__meta">Adobe Research · 2026 · Generative audio, CHI</span>
           </li>
-          <!-- SWAP IN ANY OF THESE: delete the surrounding comment markers to publish one.
-          <li class="clip">
-            <a href="https://research.adobe.com/news/look-here-researcher-predicts-what-attracts-attention-in-photos-and-designs/">Look Here: Researcher Predicts What Attracts Attention in Photos and Designs</a>
-            <span class="clip__meta">Adobe Research · Researcher profile</span>
-          </li>
+          <!-- IN RESERVE: delete the surrounding comment markers to publish one.
           <li class="clip">
             <a href="https://research.adobe.com/news/slideredit-at-cvpr-2026/">Giving Image Editors Adjustable Control Over Editing Instructions: SliderEdit at CVPR 2026</a>
             <span class="clip__meta">Adobe Research · 2026 · Image editing, CVPR</span>
@@ -146,6 +215,10 @@
             <span class="clip__meta">Adobe Research · 2026 · Diffusion models, CVPR</span>
           </li>
           <li class="clip">
+            <a href="https://research.adobe.com/news/look-here-researcher-predicts-what-attracts-attention-in-photos-and-designs/">Look Here: Researcher Predicts What Attracts Attention in Photos and Designs</a>
+            <span class="clip__meta">Adobe Research · Researcher profile</span>
+          </li>
+          <li class="clip">
             <a href="https://research.adobe.com/news/researchers-ask-will-you-remember-that-video-tomorrow/">Researchers Ask: Will You Remember that Video Tomorrow?</a>
             <span class="clip__meta">Adobe Research · Computer vision</span>
           </li>
@@ -155,8 +228,36 @@
           </li>
           -->
         </ul>
+      </div>
+    </div>
+  </section>
 
-        <p class="clips__group" style="margin-top:2.75rem">Philosophy &amp; the good life</p>
+  <!-- ============ BOOKS AND PHILOSOPHY ============ -->
+  <section class="sec sec--band rise" id="books">
+    <div class="wrap hgrid">
+      <p class="eyebrow">Books &amp; philosophy</p>
+      <div class="hgrid__body">
+        <h2>Books and philosophy</h2>
+
+        <p class="clips__group">One book · US and UK editions</p>
+        <ul class="clips" style="margin-bottom:2.5rem">
+          <li class="clip clip--book">
+            <a href="books.html" style="display:flex;align-items:center;gap:1.05rem">
+              <img src="images/beyond_stoicism.jpg" alt="" loading="lazy" width="40" height="60" style="width:40px;height:auto;flex:none">
+              <span class="clip__title">Beyond Stoicism</span>
+            </a>
+            <span class="clip__meta">A Guide to the Good Life with Stoics, Skeptics, Epicureans, and Other Ancient Philosophers<br>The Experiment · 2025 · US edition, with Massimo Pigliucci &amp; Gregory Lopez<br>Also published in Spanish, with a Chinese edition on the way.</span>
+          </li>
+          <li class="clip clip--book">
+            <a href="books.html" style="display:flex;align-items:center;gap:1.05rem">
+              <img src="images/livelike.jpg" alt="" loading="lazy" width="40" height="61" style="width:40px;height:auto;flex:none">
+              <span class="clip__title">Live Like a Philosopher</span>
+            </a>
+            <span class="clip__meta">What the Ancient Greeks and Romans Can Teach Us About Living a Happy Life<br>Headline Press · 2025 · UK edition of <cite>Beyond Stoicism</cite></span>
+          </li>
+        </ul>
+
+        <p class="clips__group">Essays</p>
         <ul class="clips">
           <li class="clip">
             <a href="https://bigthink.com/thinking/navigate-to-the-three-ports-of-ancient-philosophy-to-find-the-good-life/">Navigate
@@ -164,7 +265,7 @@
             <span class="clip__meta">Big Think · 2025 · with Gregory Lopez</span>
           </li>
           <li class="clip">
-            <a href="https://thestoicgym.com/the-stoic-magazine/article/613">Life is a festival —
+            <a href="https://thestoicgym.com/the-stoic-magazine/article/613">Life is a festival,
             if you know how to look</a>
             <span class="clip__meta">The Stoic Magazine · 2022</span>
           </li>
@@ -178,7 +279,7 @@
             Parenting in the Age of Distraction</a>
             <span class="clip__meta">Modern Stoicism</span>
           </li>
-          <!-- IN RESERVE: uncomment to publish.
+          <!-- IN RESERVE: delete the surrounding comment markers to publish one.
           <li class="clip">
             <a href="https://modernstoicism.com/a-stoic-approach-to-parenting-helping-parents-and-kids-thrive-by-meredith-alexander-kunz/">A Stoic Approach to Parenting: Helping Parents and Kids Thrive</a>
             <span class="clip__meta">Modern Stoicism</span>
@@ -192,59 +293,58 @@
             <span class="clip__meta">The Stoic Magazine</span>
           </li>
           -->
-          <!-- ADD A PIECE: copy the block below, uncomment it, fill in the three parts.
-          <li class="clip">
-            <a href="URL HERE">Headline of the piece</a>
-            <span class="clip__meta">Publication · Year</span>
-          </li>
-          -->
         </ul>
+
+        <p class="clips__group" style="margin-top:2.75rem">The Stoic Mom</p>
+        <p>I started The Stoic Mom in October 2016 and have written it ever since, first at
+        thestoicmom.com and on Substack since 2022, where I've published more than fifty posts.
+        Much of that writing pushes back on what's been made of this philosophy online: the
+        “broicism” of cold self-reliance, and the $toicism that sells ancient virtue as a
+        productivity hack.</p>
         <div class="btn-row">
-          <a class="btn btn--ghost" href="https://substack.com/@thestoicmom">More on Substack</a>
+          <a class="btn btn--ghost" href="https://substack.com/@thestoicmom">Read The Stoic Mom</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ THE STOIC MOM ============ -->
-  <section class="section" id="stoicmom">
-    <div class="wrap split">
-      <div class="split__head">
-        <p class="eyebrow">Blog</p>
-        <h2>The Stoic Mom</h2>
-        <p style="color:var(--ink-soft);max-width:30ch"><em>Because we could all use a little
-        wisdom.</em></p>
-      </div>
-      <div class="prose">
-        <p>I started The Stoic Mom in October 2016, when my daughters were ten and eight and I was
-        losing to Silicon Valley's parenting culture — the extracurriculars, the comparison, the
-        conviction that any misstep of mine would cost my kids their futures.</p>
-
-        <p>I've been writing about it ever since — first at thestoicmom.com, and on Substack
-        since 2022, where I've published more than fifty posts.</p>
-
-        <p>Much of that writing pushes back on what's been made of this philosophy online: the
-        “broicism” of cold self-reliance and extreme self-sufficiency, and the $toicism that sells
-        ancient virtue as a productivity hack. Neither is true to the philosophy. Both are worth
-        arguing with.</p>
-
+  <!-- ============ PODCAST AND APPEARANCES ============ -->
+  <section class="sec rise" id="media">
+    <div class="wrap hgrid">
+      <p class="eyebrow">Podcast &amp; appearances</p>
+      <div class="hgrid__body">
+        <h2>Podcast and appearances</h2>
+        <ul class="clips">
+          <li class="clip">
+            <a href="podcast.html">The Philosopher's Compass</a>
+            <span class="clip__meta">Creator and host · Conversations on philosophy for meaningful lives today</span>
+          </li>
+          <li class="clip">
+            <a href="podcast.html#elsewhere">Guest appearances and press</a>
+            <span class="clip__meta">Interviews, panels, and Substack Live conversations</span>
+          </li>
+        </ul>
+        <p class="note" style="margin-top:1.6rem"><span class="ph">PLACEHOLDER — if you want
+        speaking on research and science communications represented here, add a line describing what
+        you're available to speak or moderate on.</span></p>
         <div class="btn-row">
-          <a class="btn" href="https://substack.com/@thestoicmom">Read The Stoic Mom</a>
+          <a class="btn btn--ghost" href="podcast.html">Listen and watch</a>
         </div>
       </div>
     </div>
   </section>
-
 
 </main>
 
 <footer class="site-foot">
   <div class="wrap site-foot__inner">
     <p class="copyright">© <span id="yr">2026</span> Meredith Alexander Kunz. All rights reserved.</p>
-    <nav class="social">
-      <a href="https://substack.com/@thestoicmom">Substack</a>
+    <nav class="social" aria-label="More">
+      <a href="books.html">Books</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="coaching.html">Coaching</a>
       <a href="https://www.linkedin.com/in/meredithkunz/">LinkedIn</a>
-      <a href="https://www.instagram.com/the.stoic.mom/">Instagram</a>
+      <a href="https://substack.com/@thestoicmom">Substack</a>
       <a href="https://bsky.app/profile/stoicwoman.bsky.social">Bluesky</a>
     </nav>
   </div>
@@ -262,5 +362,21 @@
   });
 </script>
 
+<script>
+  (function () {
+    var els = document.querySelectorAll('.rise');
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function (el) { el.classList.add('is-in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className += ' js';</script>
 <title>Podcast — The Philosopher's Compass | Meredith Alexander Kunz</title>
 <meta name="description" content="The Philosopher's Compass — conversations offering philosophical inspiration, guidance, and direction for meaningful lives today.">
 <link rel="canonical" href="https://meredithkunz.com/podcast.html">
@@ -18,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=19">
+<link rel="stylesheet" href="style.css?v=28">
 </head>
 <body>
 
@@ -26,13 +27,11 @@
   <div class="site-head__inner">
     <a class="wordmark" href="index.html">Meredith <b>Alexander Kunz</b></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="Primary">
       <a href="index.html">Home</a>
+      <a href="work.html">Work &amp; Impact</a>
+      <a href="writing.html">Writing &amp; Media</a>
       <a href="about.html">About</a>
-      <a href="writing.html">Writing</a>
-      <a href="books.html">Books</a>
-      <a href="podcast.html" aria-current="page">Podcast</a>
-      <a href="coaching.html">Coaching</a>
       <a href="index.html#contact">Contact</a>
     </nav>
   </div>
@@ -53,7 +52,7 @@
     </div>
   </section>
 
-  <section class="section section--tight">
+  <section class="sec">
     <div class="wrap">
       <div class="embeds" style="grid-template-columns:1fr;max-width:820px">
         <iframe title="The Philosopher's Compass on Spotify"
@@ -64,13 +63,12 @@
     </div>
   </section>
 
-  <section class="section section--band section--tight">
-    <div class="wrap split">
-      <div class="split__head">
-        <p class="eyebrow">Guest &amp; press</p>
+  <section class="sec sec--band">
+    <div class="wrap hgrid">
+      <p class="eyebrow" id="elsewhere">Guest &amp; press</p>
+      <div class="hgrid__body">
         <h2>Elsewhere</h2>
-      </div>
-      <div>
+      
         <p style="color:var(--ink-soft);max-width:52ch">I've been interviewed on podcasts, spoken at
         international conferences, and appeared as a guest on NPR-affiliate radio. A few
         conversations:</p>
@@ -104,10 +102,12 @@
 <footer class="site-foot">
   <div class="wrap site-foot__inner">
     <p class="copyright">© <span id="yr">2026</span> Meredith Alexander Kunz. All rights reserved.</p>
-    <nav class="social">
-      <a href="https://substack.com/@thestoicmom">Substack</a>
+    <nav class="social" aria-label="More">
+      <a href="books.html">Books</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="coaching.html">Coaching</a>
       <a href="https://www.linkedin.com/in/meredithkunz/">LinkedIn</a>
-      <a href="https://www.instagram.com/the.stoic.mom/">Instagram</a>
+      <a href="https://substack.com/@thestoicmom">Substack</a>
       <a href="https://bsky.app/profile/stoicwoman.bsky.social">Bluesky</a>
     </nav>
   </div>
