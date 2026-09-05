@@ -192,7 +192,7 @@ p { margin: 0 0 1.15em; }
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
   line-height: 1.5;
   color: var(--ink-soft);
-  max-width: 46ch;
+  max-width: 62ch;
   margin: 0;
 }
 
