@@ -196,15 +196,24 @@ p { margin: 0 0 1.15em; }
   margin: 0;
 }
 
-/* the technology list, demoted to a caption under the photograph */
-.banner__caption {
+/* what the work covers, given its own strip under the photograph */
+.techstrip {
+  background: var(--band);
+  border-bottom: 1px solid var(--rule);
+  padding: clamp(1.15rem, 2.4vw, 1.7rem) 0;
+}
+.techstrip p {
+  margin: 0;
   font-family: var(--f-sans);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ink-faint);
-  margin: 0.95rem 0 0;
+  font-size: clamp(0.95rem, 1.6vw, 1.12rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.techstrip em {
+  font-style: normal;
+  color: var(--accent);
+  padding: 0 0.5rem;
 }
 .sec__intro {
   font-family: var(--f-serif);
