@@ -196,25 +196,6 @@ p { margin: 0 0 1.15em; }
   margin: 0;
 }
 
-/* what the work covers, given its own strip under the photograph */
-.techstrip {
-  background: var(--band);
-  border-bottom: 1px solid var(--rule);
-  padding: clamp(1.15rem, 2.4vw, 1.7rem) 0;
-}
-.techstrip p {
-  margin: 0;
-  font-family: var(--f-sans);
-  font-size: clamp(0.95rem, 1.6vw, 1.12rem);
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--ink-soft);
-}
-.techstrip em {
-  font-style: normal;
-  color: var(--accent);
-  padding: 0 0.5rem;
-}
 .sec__intro {
   font-family: var(--f-serif);
   font-size: 1.15rem;
