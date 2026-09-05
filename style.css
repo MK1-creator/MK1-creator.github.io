@@ -162,10 +162,7 @@ p { margin: 0 0 1.15em; }
 }
 
 /* Portrait lives beside the bio */
-.bio-portrait {
-  margin: 2rem 0 0;
-  max-width: 340px;
-}
+.bio-portrait { margin: 0; max-width: 100%; }
 
 /* ---------- Hero: name first, promise second ---------- */
 
@@ -398,16 +395,22 @@ p { margin: 0 0 1.15em; }
   align-items: start;
 }
 .hgrid > .eyebrow { position: sticky; top: 92px; margin-bottom: 0; }
+
+/* About gives its label column enough width to hold the portrait */
+.hgrid--wide { grid-template-columns: minmax(0, 0.42fr) minmax(0, 1fr); }
+.hgrid__side { position: sticky; top: 92px; }
+.hgrid__side .eyebrow { margin-bottom: 1.3rem; }
 .hgrid__body > h2 { margin-bottom: 1.25rem; }
 .hgrid__body > .note {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--ink-faint);
-  margin: 0 0 1.7rem;
-  max-width: 46ch;
+  margin: 0 0 1.8rem;
 }
 @media (max-width: 860px) {
-  .hgrid { grid-template-columns: 1fr; }
+  .hgrid, .hgrid--wide { grid-template-columns: 1fr; }
   .hgrid > .eyebrow { position: static; margin-bottom: 1.1rem; }
+  .hgrid__side { position: static; margin-bottom: 2rem; }
+  .bio-portrait { max-width: 320px; }
 }
 
 /* ---------- Sections ---------- */
