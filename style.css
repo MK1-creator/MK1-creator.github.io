@@ -258,27 +258,22 @@ p { margin: 0 0 1.15em; }
 
 /* ---------- Metrics, stated plainly ---------- */
 
-.metrics { display: grid; gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
+.metrics { margin: 0; padding: 0; list-style: none; }
 .metric {
-  display: grid;
-  grid-template-columns: minmax(0, 0.3fr) minmax(0, 1fr);
-  gap: 0.3rem 1.75rem;
-  padding-bottom: 1.4rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--rule);
 }
-.metrics > .metric:last-child { border-bottom: 0; padding-bottom: 0; }
+.metrics > .metric:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
 .metric__value {
   font-family: var(--f-display);
   font-weight: 700;
-  font-size: 1.5rem;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.028em;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
 }
 .metric__note { margin: 0; color: var(--ink-soft); font-size: 0.98rem; }
-@media (max-width: 700px) {
-  .metric { grid-template-columns: 1fr; gap: 0.45rem; }
-}
 
 /* ---------- Case studies ---------- */
 
